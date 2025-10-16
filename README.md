@@ -5,16 +5,27 @@ To develop the Hospital management System using Star UML tool.
 
 # SRS (Procedure):
 
-Books Appointment: The patient initiates the visit by scheduling an appointment.
-The patient sends necessary payment information (though this step's placement before treatment is unusual, it's as shown).
-The patient is examined by the nurse for basic health information and vital signs.
-The patient proceeds to the doctor's area for consultation.
-The patient receives consultation, diagnosis, and treatment from the doctor.
-The doctor records or communicates the patient's updated health status/treatment information.
-The patient receives the prescribed medication from the pharmacist.
-The pharmacist relays the total amount (AMT) information to the receptionist (presumably including the cost of medication).
-This step's placement is likely an error in the original diagram, as it's typically the Receptionist or Nurse who informs the patient of the doctor's availability, and it would occur before step 4 or 5.
-The patient finalizes the visit by paying the total bill to the receptionist.
+1. Appointment, Vitals, and Doctor Consultation Procedure
+This phase covers patient entry, preparation, and core medical services:
+
+Entry: The Patient initiates the process by BOOKS APPOINTMENT with the RECEPTIONIST.
+
+Triage: The Patient then proceeds to the NURSE, who CHECKS HEALTH STATUS OR VITALS.
+
+Consultation: The Patient is then TAKES TO THE DOC and subsequently GETS TREATED by the DOCTOR.
+
+Documentation: After treatment, the DOCTOR UPDATES STAUS (status) information (likely recording the diagnosis or next steps).
+
+2. Medication and Billing Finalization Procedure
+This phase handles prescriptions, payment processing, and system finalization:
+
+Payment Details: Early in the flow, the Patient SENDS PAYMENT DETAILS to the PHARMACIST (as shown in the diagram).
+
+Medication: The Patient then GETS MEDICINE from the PHARMACIST.
+
+Billing Information: The PHARMACIST calculates the total cost (including medication) and PASSES AMT INFO (amount information) to the RECEPTIONIST.
+
+Finalization: The procedure concludes when the Patient PAYS BILL to the RECEPTIONIST.
 
 # DIAGRAMS:
 
